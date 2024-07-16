@@ -22,7 +22,11 @@ import { OnlineComponent } from './shared/components/online/online.component';
 import { ServicesComponent } from './shared/components/services/services.component';
 import { StepsComponent } from './shared/components/steps/steps.component';
 import { WorkflowComponent } from './shared/components/workflow/workflow.component';
-
+import { MenubarModule } from 'primeng/menubar';
+import { CarouselModule } from 'primeng/carousel';
+import { ButtonModule } from 'primeng/button';
+import { TagModule } from 'primeng/tag';
+import { SwiperModule } from 'swiper/angular';
 @NgModule({
   declarations: [
     AppComponent,
@@ -44,13 +48,18 @@ import { WorkflowComponent } from './shared/components/workflow/workflow.compone
     OnlineComponent,
     ServicesComponent,
     StepsComponent,
-    WorkflowComponent
+    WorkflowComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MenubarModule,
+    CarouselModule,
+    ButtonModule,
+    TagModule,
+    SwiperModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
