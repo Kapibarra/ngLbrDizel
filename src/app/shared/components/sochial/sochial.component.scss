@@ -1,0 +1,34 @@
+.social__wrapper {
+  background: rgb(220, 234, 248);
+  margin-top: 260px;
+  margin-bottom: 260px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  & .social {
+    width: 100%;
+    max-width: 1312px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    & .social__image {
+      position: absolute;
+      right: 0px;
+      top: -200px;
+    }
+    & .social__content {
+      & .section__title {
+        margin-top: 0px !important;
+      }
+    }
+
+    & .social__text {
+    }
+    & .social__icons {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      gap: 10px;
+    }
+  }
+}
