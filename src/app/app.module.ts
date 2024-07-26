@@ -27,6 +27,8 @@ import { CarouselModule } from 'primeng/carousel';
 import { ButtonModule } from 'primeng/button';
 import { TagModule } from 'primeng/tag';
 import { SwiperModule } from 'swiper/angular';
+import { BeforeAfterComponent } from './shared/components/before-after/before-after.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -49,6 +51,7 @@ import { SwiperModule } from 'swiper/angular';
     ServicesComponent,
     StepsComponent,
     WorkflowComponent,
+    BeforeAfterComponent,
   ],
   imports: [
     BrowserModule,
