@@ -13,15 +13,15 @@ export class HeaderComponent implements OnInit {
   ngOnInit(): void {
     this.items = [
       {
-        label: 'Home',
-        icon: 'pi pi-home',
+        label: 'Главная',
+        icon: 'pi pi-fw pi-home',
       },
       {
-        label: 'Features',
+        label: 'Сервисы',
         icon: 'pi pi-star',
       },
       {
-        label: 'Projects',
+        label: 'Направления',
         icon: 'pi pi-search',
         items: [
           {
@@ -53,7 +53,7 @@ export class HeaderComponent implements OnInit {
         ],
       },
       {
-        label: 'Contact',
+        label: 'Отзывы',
         icon: 'pi pi-envelope',
       },
     ];
