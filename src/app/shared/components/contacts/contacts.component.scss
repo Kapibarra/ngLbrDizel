@@ -1,0 +1,67 @@
+.contacts__wrapper {
+  & .contacts {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1312px;
+    padding-top: 20px;
+    & .contacts__content {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      width: 100%;
+      max-width: 360px;
+      & .contacts__adress {
+        color: rgb(0, 122, 255);
+        font-family: "Exo 2";
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 22px;
+        letter-spacing: 0%;
+        text-align: left;
+      }
+      & .contacts__time {
+        color: rgb(51, 51, 51);
+        font-family: "Exo 2";
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+        letter-spacing: 0%;
+        text-align: left;
+      }
+      & .contacts__location {
+        color: rgb(51, 51, 51);
+        font-family: "Exo 2";
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 22px;
+        letter-spacing: 0%;
+        text-align: left;
+        & span {
+          font-weight: 600;
+        }
+      }
+      & .contacts__button {
+        border-radius: 6px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 16px 32px 16px 32px;
+        background: rgb(47, 128, 237);
+        color: rgb(255, 255, 255);
+        font-family: "Exo 2";
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 110%;
+        letter-spacing: 0%;
+        text-align: center;
+        cursor: pointer;
+      }
+    }
+  }
+}

@@ -1,7 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 @import "primeng/resources/themes/lara-light-blue/theme.css";
 @import "primeng/resources/primeng.css";
-
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=M+PLUS+Rounded+1c&display=swap");
 //reset css
 /*
   1. Use a more-intuitive box-sizing model.
@@ -64,4 +64,19 @@ h6 {
 #root,
 #__next {
   isolation: isolate;
+}
+
+.section__title {
+  color: rgb(51, 51, 51);
+  font-family: "Exo 2";
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 53px;
+  letter-spacing: 0%;
+  text-align: left;
+
+  width: 100%;
+  max-width: 1312px;
+  margin: 0 auto;
+  margin-top: 40px;
 }
