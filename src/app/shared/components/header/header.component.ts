@@ -17,44 +17,77 @@ export class HeaderComponent implements OnInit {
         icon: 'pi pi-fw pi-home',
       },
       {
-        label: 'Сервисы',
+        label: 'О нас',
         icon: 'pi pi-star',
       },
       {
-        label: 'Направления',
+        label: 'Ремонт насос-форсунок',
         icon: 'pi pi-search',
         items: [
           {
-            label: 'Components',
-            icon: 'pi pi-bolt',
+            label: 'DAF 105',
+            icon: 'pi pi-wrench',
           },
           {
-            label: 'Blocks',
-            icon: 'pi pi-server',
+            label: 'DAF 95, 85',
+            icon: 'pi pi-wrench',
           },
           {
-            label: 'UI Kit',
-            icon: 'pi pi-pencil',
+            label: 'DAF 106',
+            icon: 'pi pi-wrench',
           },
           {
-            label: 'Templates',
-            icon: 'pi pi-palette',
-            items: [
-              {
-                label: 'Apollo',
-                icon: 'pi pi-palette',
-              },
-              {
-                label: 'Ultima',
-                icon: 'pi pi-palette',
-              },
-            ],
+            label: 'Common Rail',
+            icon: 'pi pi-wrench',
+          },
+          {
+            label: 'VOLVO',
+            icon: 'pi pi-wrench',
+          },
+          {
+            label: 'Scania',
+            icon: 'pi pi-wrench',
+          },
+          {
+            label: 'Iveco',
+            icon: 'pi pi-wrench',
+          },
+          {
+            label: 'Renault',
+            icon: 'pi pi-wrench',
+          },
+          {
+            label: 'Mercedes',
+            icon: 'pi pi-wrench',
+          },
+          {
+            label: 'Cummins',
+            icon: 'pi pi-wrench',
+          },
+          {
+            label: 'Caterpillar',
+            icon: 'pi pi-wrench',
+          },
+        ],
+      },
+      {
+        label: 'Направления',
+        icon: 'pi pi-share-alt',
+        items: [
+          {
+            label: 'Топливное',
+          },
+          {
+            label: 'Лазерное',
+          },
+          {
+            label: 'Стендовое',
           },
         ],
       },
       {
         label: 'Отзывы',
-        icon: 'pi pi-envelope',
+        icon: 'pi pi-verified',
       },
     ];
   }

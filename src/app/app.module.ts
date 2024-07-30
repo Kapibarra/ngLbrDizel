@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { SplitterModule } from 'primeng/splitter';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MainPageComponent } from './pages/main-page/main-page.component';
@@ -28,6 +28,7 @@ import { ButtonModule } from 'primeng/button';
 import { TagModule } from 'primeng/tag';
 import { SwiperModule } from 'swiper/angular';
 import { BeforeAfterComponent } from './shared/components/before-after/before-after.component';
+import { TabViewModule } from 'primeng/tabview';
 
 @NgModule({
   declarations: [
@@ -61,6 +62,8 @@ import { BeforeAfterComponent } from './shared/components/before-after/before-af
     ButtonModule,
     TagModule,
     SwiperModule,
+    TabViewModule,
+    SplitterModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

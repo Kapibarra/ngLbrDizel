@@ -1,0 +1,66 @@
+.direction__wrapper {
+  margin: 0 auto;
+  margin-top: 110px;
+  margin-bottom: 80px;
+  width: 100%;
+  max-width: 1312px;
+
+  & .direction__title {
+    color: rgb(29, 32, 35);
+    font-family: "Exo 2";
+    font-size: 44px;
+    font-weight: 800;
+    text-align: left;
+  }
+  & .direction__subtitle {
+    border-radius: 8px;
+    color: rgb(51, 51, 51);
+    font-family: "Exo 2";
+    font-size: 20px;
+    font-weight: 300;
+    padding: 4px 10px;
+    text-align: left;
+    background: rgb(220, 234, 248);
+    margin-bottom: 30px;
+    max-width: fit-content;
+  }
+  & .direction {
+    width: 100%;
+    max-width: 1312px;
+    margin: 0 auto;
+  }
+}
+.direction__tabs-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 30px;
+  & .direction__tab-item {
+    border-radius: 6px;
+    padding: 8px 16px 8px 16px;
+    background: rgb(241, 245, 249);
+    & .item__title {
+      color: rgb(4, 20, 35);
+      font-family: "Exo 2";
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 130%;
+      letter-spacing: 0%;
+      text-align: left;
+      margin-bottom: 10px;
+    }
+    & .item__desc {
+      padding-inline-start: 18px;
+      margin-bottom: 10px;
+      & .desc__item {
+        color: rgb(4, 20, 35);
+        font-family: "Exo 2";
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 130%;
+        letter-spacing: 0%;
+        text-align: left;
+      }
+    }
+  }
+}

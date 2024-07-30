@@ -1,7 +1,20 @@
 <div class="services__wrapper">
-  <div class="section__title">Сервисные центры</div>
+  <div class="services__title">Ремонт форсунок</div>
+  <div class="services__subtitle">Ремонт форсунок</div>
   <div class="services">
-    <div class="services__content">.</div>
-    <div class="services__map"><img src="" /></div>
+    <div *ngFor="let service of services" class="services__item">
+      <div class="item__inner-wrapper">
+        <div class="item__img">
+          <img [src]="service.imageUrl" [alt]="service.title" />
+        </div>
+        <div class="item__content">
+          <div class="item__title">{{ service.title }}</div>
+          <div class="item__desc">{{ service.description }}</div>
+          <div class="item__price">{{ service.price }}</div>
+        </div>
+      </div>
+      <div class="item__button">Записаться на услугу</div>
+      <div class="item__time">{{ service.time }}</div>
+    </div>
   </div>
 </div>
