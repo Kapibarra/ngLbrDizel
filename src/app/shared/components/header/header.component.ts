@@ -27,46 +27,57 @@ export class HeaderComponent implements OnInit {
           {
             label: 'DAF 105',
             icon: 'pi pi-wrench',
+            routerLink: '/daf-105',
           },
           {
             label: 'DAF 95, 85',
             icon: 'pi pi-wrench',
+            routerLink: '/daf-95-85',
           },
           {
             label: 'DAF 106',
             icon: 'pi pi-wrench',
+            routerLink: '/daf-106',
           },
           {
             label: 'Common Rail',
             icon: 'pi pi-wrench',
+            routerLink: '/common-rail',
           },
           {
             label: 'VOLVO',
             icon: 'pi pi-wrench',
+            routerLink: '/volvo',
           },
           {
             label: 'Scania',
             icon: 'pi pi-wrench',
+            routerLink: '/scania',
           },
           {
             label: 'Iveco',
             icon: 'pi pi-wrench',
+            routerLink: '/iveco',
           },
           {
             label: 'Renault',
             icon: 'pi pi-wrench',
+            routerLink: '/renault',
           },
           {
             label: 'Mercedes',
             icon: 'pi pi-wrench',
+            routerLink: '/mercedes',
           },
           {
             label: 'Cummins',
             icon: 'pi pi-wrench',
+            routerLink: '/cummins',
           },
           {
             label: 'Caterpillar',
             icon: 'pi pi-wrench',
+            routerLink: '/caterpillar',
           },
         ],
       },

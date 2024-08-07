@@ -29,7 +29,17 @@ import { TagModule } from 'primeng/tag';
 import { SwiperModule } from 'swiper/angular';
 import { BeforeAfterComponent } from './shared/components/before-after/before-after.component';
 import { TabViewModule } from 'primeng/tabview';
-
+import { Daf105Component } from './pages/daf105/daf105.component';
+import { Daf95Component } from './pages/daf95/daf95.component';
+import { Daf106Component } from './pages/daf106/daf106.component';
+import { CommonComponent } from './pages/common/common.component';
+import { VolvoComponent } from './pages/volvo/volvo.component';
+import { ScaniaComponent } from './pages/scania/scania.component';
+import { IvecoComponent } from './pages/iveco/iveco.component';
+import { RenaultComponent } from './pages/renault/renault.component';
+import { MercedesComponent } from './pages/mercedes/mercedes.component';
+import { CumminsComponent } from './pages/cummins/cummins.component';
+import { CaterpillarComponent } from './pages/caterpillar/caterpillar.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -53,6 +63,7 @@ import { TabViewModule } from 'primeng/tabview';
     StepsComponent,
     WorkflowComponent,
     BeforeAfterComponent,
+    Daf105Component,
   ],
   imports: [
     BrowserModule,
