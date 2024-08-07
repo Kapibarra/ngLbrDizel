@@ -25,6 +25,17 @@
     margin-bottom: 30px;
     max-width: fit-content;
   }
+  & .service__img img {
+    max-height: 300px;
+    width: 100%;
+    border-radius: 14px;
+    object-fit: cover;
+    margin-bottom: 30px;
+    box-shadow: 1.2px 0px 2.2px rgba(0, 0, 0, 0.02),
+      2.9px 0px 5.3px rgba(0, 0, 0, 0.028), 5.4px 0px 10px rgba(0, 0, 0, 0.035),
+      9.6px 0px 17.9px rgba(0, 0, 0, 0.042), 18px 0px 33.4px rgba(0, 0, 0, 0.05),
+      43px 0px 80px rgba(0, 0, 0, 0.07);
+  }
   & .steps {
     width: 100%;
     max-width: 1312px;
@@ -34,7 +45,7 @@
     flex-wrap: wrap;
     gap: 10px;
     & .step__item {
-      border-radius: 20px;
+      border-radius: 14px;
       padding: 16px 24px 0px 24px;
       width: 100%;
       max-width: 228px;

@@ -1,1 +1,52 @@
-<p>cummins works!</p>
+<div class="service__wrapper">
+  <div class="service">
+    <div class="services__title">РЕМОНТ ФОРСУНОК И СЕКЦИЙ ДАФ 106</div>
+    <div class="service__subtitle">
+      ЗДЕСЬ ВАМ ДЕЙСТВИТЕЛЬНО ПОМОГУТ РАЗОБРАТЬСЯ С ТОПЛИВНОЙ!
+    </div>
+    <div class="service__img">
+      <img src="assets/images/daf106-service.jpg" alt="" />
+    </div>
+    <div class="steps">
+      <div class="step__item">
+        <div class="step__counter">1</div>
+        <div class="step__title">Диагностика + тест-план</div>
+      </div>
+      <div class="step__item">
+        <div class="step__counter">2</div>
+        <div class="step__title">Профессиональный ремонт</div>
+      </div>
+      <div class="step__item">
+        <div class="step__counter">3</div>
+        <div class="step__title">Присвоение кода</div>
+      </div>
+      <div class="step__item">
+        <div class="step__counter">4</div>
+        <div class="step__title">Паспорт стендовых испытаний</div>
+      </div>
+      <div class="step__item">
+        <div class="step__counter">5</div>
+        <div class="step__title">Официальная гарантия</div>
+      </div>
+    </div>
+    <div class="services__title">Цены на услуги</div>
+    <div class="services">
+      <div *ngFor="let service of services" class="services__item">
+        <div class="item__inner-wrapper">
+          <div class="item__img">
+            <img [src]="service.imageUrl" [alt]="service.title" />
+          </div>
+          <div class="item__content">
+            <div class="item__title">{{ service.title }}</div>
+            <div class="item__desc">{{ service.description }}</div>
+            <div class="item__price">{{ service.price }}</div>
+          </div>
+        </div>
+        <div class="item__button">Записаться на услугу</div>
+        <div class="item__time">{{ service.time }}</div>
+      </div>
+    </div>
+    <app-reviews></app-reviews>
+    <app-contacts></app-contacts>
+  </div>
+</div>
