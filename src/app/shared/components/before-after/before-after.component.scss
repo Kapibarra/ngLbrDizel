@@ -32,12 +32,27 @@
     margin: 0 auto;
     display: flex;
     gap: 50px;
-    justify-content: space-between;
+    justify-content: center;
     & .ba__content {
       display: flex;
       flex-direction: column;
+      align-items: center;
       width: 100%;
       max-width: 384px;
+      & .ba__content-title {
+        width: 100%;
+        max-width: 1312px;
+        border-radius: 8px;
+        color: rgb(51, 51, 51);
+        font-family: "Exo 2";
+        font-size: 20px;
+        font-weight: 300;
+        padding: 4px 10px;
+        text-align: left;
+        background: rgb(220, 234, 248);
+        margin-bottom: 30px;
+        max-width: fit-content;
+      }
     }
     & .ba__slider {
       margin-top: 30px;

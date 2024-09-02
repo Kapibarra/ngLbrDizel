@@ -40,6 +40,12 @@ import { RenaultComponent } from './pages/renault/renault.component';
 import { MercedesComponent } from './pages/mercedes/mercedes.component';
 import { CumminsComponent } from './pages/cummins/cummins.component';
 import { CaterpillarComponent } from './pages/caterpillar/caterpillar.component';
+import { RemontToplivnoiComponent } from './pages/remont-toplivnoi/remont-toplivnoi.component';
+import { StandsComponent } from './pages/stands/stands.component';
+import { RemontDetaleyComponent } from './pages/remont-detaley/remont-detaley.component';
+import { LazersComponent } from './pages/lazers/lazers.component';
+import { EducationComponent } from './pages/education/education.component';
+import { VideoGalleryComponent } from './shared/components/video-gallery/video-gallery.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -74,6 +80,12 @@ import { CaterpillarComponent } from './pages/caterpillar/caterpillar.component'
     MercedesComponent,
     CumminsComponent,
     CaterpillarComponent,
+    RemontToplivnoiComponent,
+    StandsComponent,
+    RemontDetaleyComponent,
+    LazersComponent,
+    EducationComponent,
+    VideoGalleryComponent,
   ],
   imports: [
     BrowserModule,

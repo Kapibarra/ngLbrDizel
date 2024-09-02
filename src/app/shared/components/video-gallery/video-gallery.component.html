@@ -1,0 +1,21 @@
+<div class="video__title">Галерея видео</div>
+<div class="video-gallery">
+  <div
+    class="video-thumbnail"
+    *ngFor="let video of videos"
+    (click)="openModal(video)"
+  >
+    <video [src]="video" muted></video>
+  </div>
+</div>
+<div class="video__title">Фотографии процесса</div>
+<div class="photo-gallery">
+  <div class="photo-thumbnail" *ngFor="let photo of photos">
+    <img [src]="photo" />
+  </div>
+</div>
+<!-- Модальное окно для видео -->
+<div id="videoModal" class="modal" *ngIf="isModalOpen">
+  <span class="close" (click)="closeModal()">&times;</span>
+  <video #modalVideo controls autoplay [src]="currentVideo"></video>
+</div>

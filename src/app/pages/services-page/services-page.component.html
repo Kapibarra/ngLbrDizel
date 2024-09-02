@@ -1,2 +1,15 @@
-<p>services-page works!</p>
+<div class="services__image"><img src="assets/images/daf95-service.jpg" /></div>
+<div class="services">
+  <div *ngFor="let service of services" class="services__item">
+    <div class="item__inner-wrapper">
+      <div class="item__img">
+        <img [src]="service.imageUrl" [alt]="service.title" />
+      </div>
+      <div class="item__content">
+        <div class="item__title">{{ service.title }}</div>
+      </div>
+    </div>
+    <a class="item__button" routerLink="{{ service.routerLink }}">Подробнее</a>
+  </div>
+</div>
 <app-steps></app-steps>

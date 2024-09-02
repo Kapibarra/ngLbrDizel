@@ -15,90 +15,83 @@ export class HeaderComponent implements OnInit {
       {
         label: 'Главная',
         icon: 'pi pi-fw pi-home',
+        routerLink: '/',
       },
       {
-        label: 'О нас',
+        label: 'О компании',
         icon: 'pi pi-star',
+        routerLink: '/about',
       },
       {
-        label: 'Ремонт насос-форсунок',
+        label: 'Услуги',
         icon: 'pi pi-search',
-        items: [
-          {
-            label: 'DAF 105',
-            icon: 'pi pi-wrench',
-            routerLink: '/daf-105',
-          },
-          {
-            label: 'DAF 95, 85',
-            icon: 'pi pi-wrench',
-            routerLink: '/daf-95-85',
-          },
-          {
-            label: 'DAF 106',
-            icon: 'pi pi-wrench',
-            routerLink: '/daf-106',
-          },
-          {
-            label: 'Common Rail',
-            icon: 'pi pi-wrench',
-            routerLink: '/common-rail',
-          },
-          {
-            label: 'VOLVO',
-            icon: 'pi pi-wrench',
-            routerLink: '/volvo',
-          },
-          {
-            label: 'Scania',
-            icon: 'pi pi-wrench',
-            routerLink: '/scania',
-          },
-          {
-            label: 'Iveco',
-            icon: 'pi pi-wrench',
-            routerLink: '/iveco',
-          },
-          {
-            label: 'Renault',
-            icon: 'pi pi-wrench',
-            routerLink: '/renault',
-          },
-          {
-            label: 'Mercedes',
-            icon: 'pi pi-wrench',
-            routerLink: '/mercedes',
-          },
-          {
-            label: 'Cummins',
-            icon: 'pi pi-wrench',
-            routerLink: '/cummins',
-          },
-          {
-            label: 'Caterpillar',
-            icon: 'pi pi-wrench',
-            routerLink: '/caterpillar',
-          },
-        ],
+        routerLink: '/services',
+        // items: [
+        //   {
+        //     label: 'DAF 105',
+        //     icon: 'pi pi-wrench',
+        //     routerLink: '/daf-105',
+        //   },
+        //   {
+        //     label: 'DAF 95, 85',
+        //     icon: 'pi pi-wrench',
+        //     routerLink: '/daf-95-85',
+        //   },
+        //   {
+        //     label: 'DAF 106',
+        //     icon: 'pi pi-wrench',
+        //     routerLink: '/daf-106',
+        //   },
+        //   {
+        //     label: 'Common Rail',
+        //     icon: 'pi pi-wrench',
+        //     routerLink: '/common-rail',
+        //   },
+        //   {
+        //     label: 'VOLVO',
+        //     icon: 'pi pi-wrench',
+        //     routerLink: '/volvo',
+        //   },
+        //   {
+        //     label: 'Scania',
+        //     icon: 'pi pi-wrench',
+        //     routerLink: '/scania',
+        //   },
+        //   {
+        //     label: 'Iveco',
+        //     icon: 'pi pi-wrench',
+        //     routerLink: '/iveco',
+        //   },
+        //   {
+        //     label: 'Renault',
+        //     icon: 'pi pi-wrench',
+        //     routerLink: '/renault',
+        //   },
+        //   {
+        //     label: 'Mercedes',
+        //     icon: 'pi pi-wrench',
+        //     routerLink: '/mercedes',
+        //   },
+        //   {
+        //     label: 'Cummins',
+        //     icon: 'pi pi-wrench',
+        //     routerLink: '/cummins',
+        //   },
+        //   {
+        //     label: 'Caterpillar',
+        //     icon: 'pi pi-wrench',
+        //     routerLink: '/caterpillar',
+        //   },
+        // ],
       },
       {
-        label: 'Направления',
+        label: 'Обучение',
         icon: 'pi pi-share-alt',
-        items: [
-          {
-            label: 'Топливное',
-          },
-          {
-            label: 'Лазерное',
-          },
-          {
-            label: 'Стендовое',
-          },
-        ],
       },
       {
-        label: 'Отзывы',
+        label: 'Контакты',
         icon: 'pi pi-verified',
+        routerLink: '/contact',
       },
     ];
   }
