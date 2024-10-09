@@ -4,7 +4,10 @@
   margin-bottom: 80px;
   width: 100%;
   max-width: 1312px;
-
+  @media (max-width: 430px) {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
   & .services__title {
     color: rgb(29, 32, 35);
     font-family: "Exo 2";
@@ -12,6 +15,10 @@
     font-weight: 800;
     margin-top: 80px;
     text-align: left;
+    @media (max-width: 430px) {
+      line-height: 33px;
+      margin-bottom: 15px;
+    }
   }
   & .service__subtitle {
     border-radius: 8px;
@@ -50,6 +57,9 @@
       width: 100%;
       max-width: 228px;
       background: rgb(242, 243, 247);
+      @media (max-width: 430px) {
+        max-width: 100%;
+      }
       & .step__counter {
         border-radius: 8px;
         color: rgb(255, 255, 255);
@@ -86,6 +96,7 @@
   flex-wrap: wrap;
   margin-top: 30px;
   gap: 10px;
+
   & .services__item {
     box-sizing: border-box;
     border: 1px solid rgb(220, 234, 248);

@@ -4,6 +4,10 @@
   margin-bottom: 260px;
   padding-top: 60px;
   padding-bottom: 60px;
+  @media (max-width: 430px) {
+    margin-bottom: 60px;
+    margin-top: 60px;
+  }
   & .social {
     width: 100%;
     max-width: 1312px;
@@ -11,24 +15,45 @@
     display: flex;
     flex-direction: row;
     position: relative;
+    @media (max-width: 430px) {
+      flex-direction: column;
+    }
     & .social__image {
       position: absolute;
       right: 0px;
       top: -200px;
+      @media (max-width: 430px) {
+        position: relative;
+        display: block;
+        top: 30px;
+      }
     }
     & .social__content {
       & .section__title {
         margin-top: 0px !important;
+        @media (max-width: 430px) {
+          padding-right: 10px;
+          padding-left: 10px;
+          line-height: 33px;
+        }
       }
     }
 
     & .social__text {
+      @media (max-width: 430px) {
+        padding-right: 10px;
+        padding-left: 10px;
+        margin-top: 15px;
+      }
     }
     & .social__icons {
       display: flex;
       flex-direction: row;
       flex-wrap: nowrap;
       gap: 10px;
+      @media (max-width: 430px) {
+        justify-content: center;
+      }
     }
   }
 }

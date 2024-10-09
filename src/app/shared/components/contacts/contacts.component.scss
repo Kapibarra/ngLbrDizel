@@ -1,4 +1,8 @@
 .contacts__wrapper {
+  @media (max-width: 430px) {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
   & .contacts {
     display: flex;
     flex-direction: row;

@@ -1,4 +1,11 @@
 .reviews__wrapper {
+  & .section__title {
+    @media (max-width: 430px) {
+      padding-left: 10px;
+      padding-right: 10px;
+      line-height: 33px;
+    }
+  }
   & .reviews {
     display: flex;
     flex-direction: row;
@@ -7,6 +14,12 @@
     max-width: 1312px;
     margin: 0 auto;
     margin-top: 20px;
+    @media (max-width: 430px) {
+      flex-direction: column;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+
     & .reviews__content {
       display: flex;
       flex-direction: column;
