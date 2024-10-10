@@ -27,6 +27,7 @@ import { CarouselModule } from 'primeng/carousel';
 import { ButtonModule } from 'primeng/button';
 import { TagModule } from 'primeng/tag';
 import { SwiperModule } from 'swiper/angular';
+import { BreadcrumbModule } from 'primeng/breadcrumb';
 import { BeforeAfterComponent } from './shared/components/before-after/before-after.component';
 import { TabViewModule } from 'primeng/tabview';
 import { Daf105Component } from './pages/daf105/daf105.component';
@@ -97,6 +98,7 @@ import { VideoGalleryComponent } from './shared/components/video-gallery/video-g
     SwiperModule,
     TabViewModule,
     SplitterModule,
+    BreadcrumbModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

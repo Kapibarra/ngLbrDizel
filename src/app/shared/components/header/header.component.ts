@@ -8,6 +8,7 @@ import { MenubarModule } from 'primeng/menubar';
 })
 export class HeaderComponent implements OnInit {
   items: MenuItem[] | undefined;
+  home: MenuItem | undefined;
   constructor() {}
 
   ngOnInit(): void {
@@ -94,5 +95,6 @@ export class HeaderComponent implements OnInit {
         routerLink: '/contact',
       },
     ];
+    this.home = { icon: 'pi pi-home', routerLink: '/' };
   }
 }
