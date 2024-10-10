@@ -45,6 +45,19 @@
   width: 300px;
   cursor: pointer;
   position: relative;
+  & img {
+    position: absolute;
+    z-index: 3;
+    top: 65px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 1;
+    transition: all 0.2s ease-in-out;
+  }
+  &:hover img {
+    transition: all 0.2s ease-in-out;
+    opacity: 0.5;
+  }
 }
 
 .video-thumbnail video {

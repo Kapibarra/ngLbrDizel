@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./reviews.component.scss'],
 })
 export class ReviewsComponent implements OnInit {
-  mobile = false;
+  mobile = true;
   constructor() {}
 
   ngOnInit(): void {

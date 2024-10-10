@@ -91,5 +91,13 @@ h6 {
 .p-menuitem-text {
   margin-right: 5px;
 }
+@media (max-width: 430px) {
+  .p-menubar {
+    justify-content: flex-end;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+}
+
 body {
 }
