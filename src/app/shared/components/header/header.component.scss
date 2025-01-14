@@ -2,10 +2,11 @@
   width: 100%;
   max-width: 1312px;
   margin: 0 auto;
-  & .header__logo {
+  & .header__logo .logo {
     display: flex;
     flex-direction: row;
     align-items: center;
+    flex-wrap: nowrap;
     gap: 15px;
     color: rgb(29, 32, 35);
     font-family: "Exo 2";
@@ -25,5 +26,34 @@
     margin: 0 auto;
     margin-top: 30px;
     margin-bottom: 30px;
+  }
+}
+.mobile {
+  display: none;
+  @media (max-width: 430px) {
+    display: block;
+  }
+}
+.header__logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  @media (max-width: 430px) {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+  }
+  & .header__phone {
+    display: block;
+    color: rgb(29, 32, 35);
+    font-family: "Exo 2";
+    font-size: 26px;
+    font-weight: 800;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+    &:hover {
+      transition: all 0.2s ease-in-out;
+      color: rgb(47, 128, 237);
+    }
   }
 }

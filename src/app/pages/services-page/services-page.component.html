@@ -1,6 +1,17 @@
-<div class="services__image"><img src="assets/images/daf95-service.jpg" /></div>
+<div class="services__title">
+  Ремонт топливной аппаратуры
+
+  <p class="service__subtitle">
+    • Ремонт насос-форсунок <br />
+    • Ремонт Клапанов высокого давления
+  </p>
+</div>
 <div class="services">
-  <div *ngFor="let service of services" class="services__item">
+  <div
+    *ngFor="let service of services"
+    class="services__item"
+    routerLink="{{ service.routerLink }}"
+  >
     <div class="item__inner-wrapper">
       <div class="item__img">
         <img [src]="service.imageUrl" [alt]="service.title" />
@@ -12,4 +23,99 @@
     <a class="item__button" routerLink="{{ service.routerLink }}">Подробнее</a>
   </div>
 </div>
-<app-steps></app-steps>
+<div class="services__title" id="lazers">
+  Производство лазерного оборудования
+  <p class="service__subtitle">• Лазерные установки на любой вкус</p>
+</div>
+<div class="services">
+  <div *ngFor="let service of services2" class="services__item">
+    <div class="item__inner-wrapper">
+      <div class="item__img">
+        <img [src]="service.imageUrl" [alt]="service.title" />
+      </div>
+      <div class="item__content">
+        <div class="item__title">{{ service.title }}</div>
+      </div>
+    </div>
+    <!-- <a class="item__button" routerLink="{{ service.routerLink }}">Подробнее</a> -->
+  </div>
+</div>
+<div class="services__title" id="stands">
+  Производство стендового оборудования
+  <p class="service__subtitle">
+    • Для ремонта топливной аппаратуры <br />• Производство CAM-BOX <br />•
+    Производство Электроники <br />
+  </p>
+</div>
+<div class="services">
+  <div *ngFor="let service of services3" class="services__item">
+    <div class="item__inner-wrapper">
+      <div class="item__img">
+        <img [src]="service.imageUrl" [alt]="service.title" />
+      </div>
+      <div class="item__content">
+        <div class="item__title">{{ service.title }}</div>
+      </div>
+    </div>
+    <!-- <a class="item__button" routerLink="{{ service.routerLink }}">Подробнее</a> -->
+  </div>
+</div>
+<div class="services__title" id="calibrating">
+  Производство калибровочной жидкости
+  <p class="service__subtitle">
+    • Калибровочная жидкость для дизельных стендов. <br />
+  </p>
+</div>
+<div class="services">
+  <div *ngFor="let service of services4" class="services__item">
+    <div class="item__inner-wrapper">
+      <div class="item__img">
+        <img [src]="service.imageUrl" [alt]="service.title" />
+      </div>
+      <div class="item__content">
+        <div class="item__title">{{ service.title }}</div>
+      </div>
+    </div>
+    <!-- <a class="item__button" routerLink="{{ service.routerLink }}">Подробнее</a> -->
+  </div>
+  <div class="services__item-lg">
+    <div class="item__inner-wrapper">
+      <div class="item__content">
+        <div class="item__title">Рассказываем подробнее</div>
+        <p>
+          Наша Калибровочная жидкость является аналогом жидкости шел, но
+          производится в России из Российских компонентов. Прошла успешные
+          испытания в ряде сервисом по ремонту дизельное топливной аппаратуры:
+          рядных ТНВД, насос - форсунок, форсунок common rail и т.д.
+          Рекомендован к применению институтом МАДИ.
+        </p>
+        <div class="download-buttons">
+          <div class="download-buttons">
+            <a
+              href="assets/docs/01.pdf"
+              class="download-btn"
+              download="Паспорт_безопасности_химической_продукции.pdf"
+            >
+              <i class="fa fa-file-download"></i> Паспорт соответствия
+            </a>
+            <a
+              href="assets/docs/02.pdf"
+              class="download-btn"
+              download="Паспорт_соответствия_стандарта_качества.pdf"
+            >
+              <i class="fa fa-file-download"></i>Паспорт безопасности
+            </a>
+            <a
+              href="assets/docs/03.pdf"
+              class="download-btn"
+              download="Паспорт_показателей_качества.pdf"
+            >
+              <i class="fa fa-file-download"></i> Паспорт показателей
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <a class="item__button" routerLink="{{ service.routerLink }}">Подробнее</a> -->
+  </div>
+</div>

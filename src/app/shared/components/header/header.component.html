@@ -1,11 +1,12 @@
 <div class="header__wrapper">
   <div class="header__logo">
-    <img src="assets/images/logo.svg" />ЦИТ Александрит
+    <div class="logo"><img src="assets/images/logo.svg" />ЦИТ Александрит</div>
+    <a href="tel:+79265035908" class="header__phone">8 (926)503-59-08</a>
   </div>
   <div class="header">
     <p-menubar [model]="items">
       <ng-template pTemplate="end">
-        <div class="flex align-items-center gap-2">Меню</div>
+        <div class="flex align-items-center gap-2 mobile">Меню</div>
       </ng-template></p-menubar
     >
   </div>

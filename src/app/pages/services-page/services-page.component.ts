@@ -1,4 +1,6 @@
+import { ViewportScroller } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 export interface Service {
   imageUrl: string;
   title: string;
@@ -10,7 +12,19 @@ export interface Service {
   styleUrls: ['./services-page.component.scss'],
 })
 export class ServicesPageComponent implements OnInit {
-  constructor() {}
+  constructor(
+    private route: ActivatedRoute,
+    private viewportScroller: ViewportScroller
+  ) {}
+
+  ngAfterViewInit() {
+    // Прокрутить к якорю после инициализации компонента
+    this.route.fragment.subscribe((fragment) => {
+      if (fragment) {
+        this.viewportScroller.scrollToAnchor(fragment);
+      }
+    });
+  }
 
   ngOnInit(): void {}
   services: Service[] = [
@@ -68,6 +82,27 @@ export class ServicesPageComponent implements OnInit {
       imageUrl: 'assets/images/daf95-service.jpg',
       title: 'Ремонт Caterpillar',
       routerLink: '/caterpillar',
+    },
+  ];
+  services2: Service[] = [
+    {
+      imageUrl: 'assets/images/stanok.jpg',
+      title: 'Изготовление лазерных установок',
+      routerLink: '/lazers',
+    },
+  ];
+  services3: Service[] = [
+    {
+      imageUrl: 'assets/images/stanok.jpg',
+      title: 'Для стендового оборудования',
+      routerLink: '/lazers',
+    },
+  ];
+  services4: Service[] = [
+    {
+      imageUrl: 'assets/images/jidkost.JPG',
+      title: 'Для стендового оборудования',
+      routerLink: '/lazers',
     },
   ];
 }
